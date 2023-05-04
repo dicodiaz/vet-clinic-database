@@ -19,9 +19,11 @@
 
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
-**Vet Clinic Database** is a relational database that stores the data and relations of a vet clinic. It includes data about:
+**Vet Clinic Database** is a relational database that stores the data of a vet clinic. It includes data about:
 
 - Animals
+- Owners
+- Species
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -36,7 +38,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Create, populate and query from a PostgreSQL table**
+- **Create, populate and query from several PostgreSQL tables**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,8 +88,8 @@ After executing these, you should be ready to:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Update and query from animals table**
-- [ ] **Query from multiple tables**
+- [x] **Update and query from animals table**
+- [x] **Query from multiple tables**
 - [ ] **Add "join table" for visits**
 - [ ] **Database performance audit**
 - [ ] **Add database schema diagram**
