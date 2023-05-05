@@ -90,7 +90,7 @@ After executing these, you should be ready to:
 
 - [x] **Update and query from animals table**
 - [x] **Query from multiple tables**
-- [ ] **Add "join table" for visits**
+- [x] **Add "join table" for visits**
 - [ ] **Database performance audit**
 - [ ] **Add database schema diagram**
 
