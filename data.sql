@@ -530,3 +530,19 @@ VALUES -- Agumon visited William Tatcher on May 24th, 2020.
     ),
     make_date(2021, 01, 11)
   );
+
+INSERT INTO visits (animal_id, vet_id, date_of_visit)
+SELECT *
+FROM (
+    SELECT id
+    FROM animals
+  ) animal_ids,
+  (
+    SELECT id
+    FROM vets
+  ) vets_ids,
+  generate_series('1980-01-01'::TIMESTAMP, '2021-01-01', '4 hours') visit_timestamp;
+
+INSERT INTO owners (full_name, email)
+SELECT 'Owner ' || generate_series(1, 2500000),
+  'owner_' || generate_series(1, 2500000) || '@mail.com';
