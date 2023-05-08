@@ -320,3 +320,13 @@ FROM (
   JOIN species ON species.id = animals.species_id
 GROUP BY species.name
 ORDER BY COUNT(visits.id) DESC;
+
+EXPLAIN analyze
+SELECT COUNT(*)
+FROM visits
+WHERE animal_id = 4;
+
+EXPLAIN analyze
+SELECT *
+FROM visits
+WHERE vet_id = 2;
