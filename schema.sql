@@ -58,3 +58,4 @@ ADD COLUMN email VARCHAR(120);
 CREATE INDEX idx_visits_animal_id_asc ON visits(animal_id ASC);
 
 CREATE INDEX idx_visits_vet_id_covering ON visits (vet_id, id, animal_id, date_of_visit);
+CREATE INDEX idx_owners_email ON owners (email);
