@@ -24,6 +24,13 @@
 - Animals
 - Owners
 - Species
+- Vets
+- Visits
+- Specializations
+
+## Schema Diagram
+
+<img src="./schema-diagram.png" alt="Schema diagram" />
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -91,8 +98,8 @@ After executing these, you should be ready to:
 - [x] **Update and query from animals table**
 - [x] **Query from multiple tables**
 - [x] **Add "join table" for visits**
-- [ ] **Database performance audit**
-- [ ] **Add database schema diagram**
+- [x] **Database performance audit**
+- [x] **Add database schema diagram**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
