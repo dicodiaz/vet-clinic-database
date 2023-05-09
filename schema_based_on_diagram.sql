@@ -1,0 +1,18 @@
+CREATE TABLE medical_histories(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  admitted_at TIMESTAMP NOT NULL,
+  patient_id INT NOT NULL,
+  status VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE treatments(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  TYPE VARCHAR(100) NOT NULL,
+  name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE treatments_history(
+  id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  medical_history_id INT NOT NULL REFERENCES medical_histories(id),
+  treatment_id INT NOT NULL REFERENCES treatments(id)
+);
